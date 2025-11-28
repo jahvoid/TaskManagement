@@ -1,0 +1,13 @@
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\bin\Debug\net9.0\IdentityManagement.Core.deps.json
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\bin\Debug\net9.0\IdentityManagement.Core.dll
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\bin\Debug\net9.0\IdentityManagement.Core.pdb
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.csproj.AssemblyReference.cache
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.AssemblyInfoInputs.cache
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.AssemblyInfo.cs
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.csproj.CoreCompileInputs.cache
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.sourcelink.json
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.dll
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\refint\IdentityManagement.Core.dll
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\IdentityManagement.Core.pdb
+C:\Users\johnj\Desktop\PROG MATERIALS\IdentityManagement\IdentityManagement.Core\obj\Debug\net9.0\ref\IdentityManagement.Core.dll
