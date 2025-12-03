@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagement.Core.DTOs;
@@ -9,6 +10,7 @@ using TaskManagement.Core.Models;
 
 namespace TaskManagement.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TasksController : ControllerBase
@@ -21,6 +23,7 @@ namespace TaskManagement.API.Controllers
         }
 
         // GET: api/tasks
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TaskItem>>> GetAllTasks()
         {
