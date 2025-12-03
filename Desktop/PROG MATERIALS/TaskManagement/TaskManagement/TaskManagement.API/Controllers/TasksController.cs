@@ -33,8 +33,9 @@ namespace TaskManagement.API.Controllers
         public async Task<ActionResult<TaskItem>> GetTask(int id)
         {
             var task = await _repository.GetByIdAsync(id);
-            if (task == null)
+            if (task == null){
                 return NotFound(new { message = $"Task with ID {id} not found" });
+            }
 
             return Ok(task);
         }
@@ -43,8 +44,9 @@ namespace TaskManagement.API.Controllers
         [HttpPost]
         public async Task<ActionResult<TaskItem>> CreateTask([FromBody] TaskItemCreateDto taskDto)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid){
                 return BadRequest(ModelState);
+            }
 
             var task = new TaskItem
             {
@@ -95,13 +97,14 @@ namespace TaskManagement.API.Controllers
         public async Task<IActionResult> PatchTask(int id, [FromBody] JsonPatchDocument<TaskItem> patchDoc)
         {
             if (patchDoc == null)
+            {
                 return BadRequest(new { message = "Patch document is null" });
+            }
 
             var task = await _repository.GetByIdAsync(id);
             if (task == null)
                 return NotFound(new { message = $"Task with ID {id} not found" });
 
-            // Apply patch and validate
             patchDoc.ApplyTo(task, ModelState);
             TryValidateModel(task);
 

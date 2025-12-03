@@ -7,7 +7,7 @@ public class ApplicationDbContext : DbContext
         : base(options)
 {
 }
-    public DbSet<TaskItem> Tasks { get; set; }
+    public DbSet<TaskItem> Tasks { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

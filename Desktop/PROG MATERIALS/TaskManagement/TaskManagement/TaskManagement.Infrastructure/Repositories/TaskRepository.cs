@@ -15,23 +15,23 @@ public class TaskRepository : ITaskRepository
     return await _context.Tasks.ToListAsync();
 }
     public async Task<TaskItem?> GetByIdAsync(int id)
-{
-    return await _context.Tasks.FindAsync(id);
-}
+    {
+        return await _context.Tasks.FindAsync(id);
+    }
     public async Task<TaskItem> CreateAsync(TaskItem task)
-{
-    task.CreatedAt = DateTime.UtcNow;
-    _context.Tasks.Add(task);
-    await _context.SaveChangesAsync();
-    return task;
-}
+    {
+        task.CreatedAt = DateTime.UtcNow;
+        _context.Tasks.Add(task);
+        await _context.SaveChangesAsync();
+        return task;
+    }
     public async Task<TaskItem?> UpdateAsync(TaskItem task)
-{
-    var existingTask = await _context.Tasks.FindAsync(task.Id);
-    if (existingTask == null)
-{
-    return null;
-}
+    {
+        var existingTask = await _context.Tasks.FindAsync(task.Id);
+        if (existingTask == null)
+    {
+        return null;
+    }
     existingTask.Title = task.Title;
     existingTask.Description = task.Description;
     existingTask.Status = task.Status;
@@ -41,18 +41,18 @@ public class TaskRepository : ITaskRepository
     return existingTask;
 }
     public async Task<bool> DeleteAsync(int id)
-{
-    var task = await _context.Tasks.FindAsync(id);
-    if (task == null)
-{
-    return false;
-}
+    {
+        var task = await _context.Tasks.FindAsync(id);
+        if (task == null)
+    {
+        return false;
+    }
     _context.Tasks.Remove(task);
     await _context.SaveChangesAsync();
     return true;
 }
     public async Task<bool> ExistsAsync(int id)
-{
-    return await _context.Tasks.AnyAsync(t => t.Id == id);
-}
+    {
+        return await _context.Tasks.AnyAsync(t => t.Id == id);
+    }
 }
